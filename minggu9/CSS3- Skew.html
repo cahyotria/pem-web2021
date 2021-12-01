@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial CSS Transform</title>
+<link rel="stylesheet" type="text/css" href="skew.css">
+<style type="text/css">
+body{
+background: #5e5bf3;
+font-family: roboto;
+text-align: center;
+}
+h1,h2{
+color: #fff;
+}
+.ketengah{
+margin: 10px auto;
+width: 1150px;
+}
+.kotak1{
+background: #fcfcfc;
+padding: 20px;
+float: left;
+margin: 50px;
+width: 150px;
+height: 150px;
+}
+.kotak2{
+background: #fcfcfc;
+padding: 20px;
+float: left;
+margin: 50px;
+width: 150px;
+height: 150px;
+-ms-transform: skew(20deg); /* Support IE 9 */
+ -webkit-transform: skew(20deg); /* support Safari */
+ transform: skew(20deg); /* Standard syntax */
+}
+.kotak3{
+background: #fcfcfc;
+padding: 20px;
+float: left;
+margin: 50px;
+width: 150px;
+height: 150px;
+-ms-transform: skew(30deg,20deg); /* Support IE 9 */
+ -webkit-transform: skew(30deg,20deg); /* support Safari */
+ transform: skew(30deg,20deg); /* Standard syntax */
+}
+.kotak4{
+background: #fcfcfc;
+padding: 20px;
+float: left;
+margin: 50px;
+width: 150px;
+height: 150px;
+-ms-transform: skewY(20deg); /* Support IE 9 */
+ -webkit-transform: skewY(20deg); /* support Safari */
+ transform: skewY(20deg); /* Standard syntax */
+}
+.kotak5{
+background: #fcfcfc;
+padding: 20px;
+float: left;
+margin: 50px;
+width: 150px;
+height: 150px;
+-ms-transform: skewX(20deg); /* Support IE 9 */
+ -webkit-transform: skewX(20deg); /* support Safari */
+ transform: skewX(20deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+<h1>Tutorial CSS Transform</h1>
+<h2>skew()</h2>
+<div class="kotak1">
+Ini adalah kotak 1. kotak ini tidak di berikan method skew
+</div>
+<div class="kotak2">
+Ini adalah kotak 2. ini contoh fungsi skew() CSS Transform.
+skew().
+</div>
+<div class="kotak3">
+Ini adalah kotak 2. ini contoh fungsi skew() CSS Transform.
+skew() 2 parameter.
+</div>
+<div class="kotak4">
+Ini adalah kotak 2. ini contoh fungsi skew() CSS Transform.
+skewY().
+</div>
+<div class="kotak5">
+Ini adalah kotak 2. ini contoh fungsi skew() CSS Transform.
+skewX().
+</div>
+</body>
+</html>

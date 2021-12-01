@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contoh CSS Bergerak</title>
+    <link rel="stylesheet" type="text/css" href="contoh.css">
+    <style type="text/css">
+        body {
+            background: rebeccapurple;
+            font-family: 'Lucida Sans';
+            color: royalblue;
+        }
+
+        h1 {
+            color: sandybrown;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 400px;
+                top: 100px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 410px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+                background-color: red;
+                left: 10px;
+                top: 10px;
+            }
+        }
+        }
+    </style>
+
+<body>
+    <h1>Contoh Animation Kiri Kanan</h1>
+    <div></div>
+</body>
+</head>
+
+</html>

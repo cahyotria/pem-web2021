@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Membuat efek animasi dengan css3</title>
+<link rel="stylesheet" type="text/css" href="contoh.css">
+<style type="text/css"> 
+body{
+background: #35A9DB;
+font-family: roboto;
+color: #fff;
+}
+h1{
+width: 700px;
+}
+.kotak{
+background: rgb(0, 0, 112);
+width: 200px;
+height: 200px;
+animation-name: animasi_kotak;
+animation-duration: 10s;
+}
+@keyframes animasi_kotak{
+from{ background: rgb(3, 3, 116);}
+to{background: rgb(187, 255, 0);}
+}
+</style>
+</head>
+<body>
+<h1>Membuat efek animasi dengan css3</h1>
+<h2>Contoh penggunaan @keyframe</h2>
+<div class="kotak"></div>
+</body>
+</html>

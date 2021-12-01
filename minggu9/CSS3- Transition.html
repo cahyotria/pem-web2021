@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial CSS3 Transition </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css"> 
+body{
+background: #35A9DB;
+font-family: roboto;
+text-align: center;
+}
+h1{
+color: #fff;
+}
+div{
+margin: 50px;
+}
+.kotak1{
+background: #fff;
+width: 100px;
+height: 100px;
+transition: width 1s;
+-webkit-transition: width 1s;
+}
+.kotak:active{
+width: 300px;
+}
+.kotak2{
+background: rgb(207, 4, 4);
+width: 100px;
+height: 100px;
+transition: width 1s, height 2s;
+-webkit-transition: width 1s, height 2s;
+}
+.kotak2:focus-visible{
+width: 500px;
+height: 300px;
+}
+
+</style>
+</head>
+<body>
+<h1>Tutorial CSS3 Transition</h1>
+<div class="kotak1">ini kotak 1</div>
+<div class="kotak2">ini kotak 2</div>
+</body>
+</html>
