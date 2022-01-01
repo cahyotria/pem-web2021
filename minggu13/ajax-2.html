@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar Dasar Ajax</title>
+</head>
+
+<body>
+  <h1></h1>Tutorial Ajax <button id="btn-clear" onclick="clearResult()">Clear</button></h1>
+  <div id="hasil"></div>
+  <button id="button" onclick="loadContent()">Load Content</button>
+
+  <script>
+    function loadContent() {
+      var xhr = new XMLHttpRequest();
+      var url = "http://localhost/ajax_files/kode.json";
+
+      xhr.onloadstart = function ();
+      document.getElementById("button").innerHTML = "loading....";
+
+    }
+    xhr.onerror = function () {
+      alert("Gagal mengambil data");
+    };
+    xhr.onloadend = function () {
+      if (this.responText !== "") {
+        var data = JSON.parse(this.responText);
+        var img = document.createElement("img");
+        name.innerHTML = data, name;
+
+        document.getElementById("hasil").append(img, name);
+        document.getElementById("button").innerHTML = "Done";
+
+        setTimeout(function () {
+          document.getElementById("button").innerHTML = "Load 
+Lagi";
+        }, 3000);
+      }
+    };
+
+    xhr.open("GET", url, true);
+    xhr.send();
+ }
+    function clearResult() {
+      document.getElementById("hasil").innerHTML = "";
+    }
+  </script>
+</body>
+
+</html>
