@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Warna gradient dengan css3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        body {
+            background: #000000;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .ketengah {
+            margin: 60px auto;
+            width: 1155px;
+        }
+
+        .kotak {
+            background: rgb(98, 0, 255);
+            width: 500px;
+            float: right;
+            height: 400px;
+            margin: 30px;
+        }
+
+        .gradient1 {
+            background: linear-gradient(red, green);
+            Standard syntax background: -webkit-linear-gradient(red, green);
+            For Safari 5.1 to 6.0 background: -o-linear-gradient(red, green);
+            For Opera 11.1 to 12.0 background: -moz-linear-gradient(red, green);
+            For Firefox 3.6 to 15
+        }
+
+        .gradient2 {
+            background: linear-gradient(to right, red, yellow, green);
+            Standard syntax background: -webkit-linear-gradient(left, red, yellow, green);
+            For Safari 5.1 to 6.0 background: -o-linear-gradient(right, red, yellow, green);
+            For Opera 11.1 to 12.0 background: -moz-linear-gradient(right, red, yellow, green);
+            For Firefox 3.6 to 15
+        }
+
+        .gradient3 {
+            background: radial-gradient(red, yellow, green);
+            Standard syntax background: -webkit-radial-gradient(red, yellow, green);
+            Safari 5.1 to 6.0 background: -o-radial-gradient(red, yellow, green);
+            For Opera 11.6 to 12.0 background: -moz-radial-gradient(red, yellow, green);
+            For Firefox 3.6 to 15
+        }
+
+        .gradient4 {
+            background: radial-gradient(circle, red, yellow, green);
+            Standard syntax background: -webkit-radial-gradient(circle, red, yellow, green);
+            Safari background: -o-radial-gradient(circle, red, yellow, green);
+            Opera 11.6 to 12.0 background: -moz-radial-gradient(circle, red, yellow, green);
+            Firefox 3.6 to 15
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Warna gradient dengan css3</h1>
+    <div class="ketengah">
+
+
+        <div class="kotak gradient1"></div>
+        <div class="kotak gradient2"></div>
+
+        <div class="kotak gradient3"></div>
+        <div class="kotak gradient4"></div>
+    </div>
+</body>
+
+</html
